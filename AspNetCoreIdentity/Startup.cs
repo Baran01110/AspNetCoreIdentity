@@ -20,7 +20,7 @@ namespace AspNetCoreIdentity
         {
             services.AddDbContext<UContext>(opt =>
             {
-                opt.UseSqlServer("server=DESKTOP-12BR9N2; database=IdentityDb integrated security=true;");
+                opt.UseSqlServer("server=DESKTOP-12BR9N2; database=IdentityDb; integrated security=true;");
             });
             services.AddControllersWithViews();
         }
